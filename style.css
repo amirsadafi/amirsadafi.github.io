@@ -8,35 +8,18 @@
   opacity: 1;
 }
 
-#about {
-  text-align: center;
-  padding: 0 2rem;
+section[data-aos] {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
-  #about {
-    padding: 0 1rem; /* More compact padding for smaller screens */
-  }
-  section {
-    padding: 1rem; /* Reduced padding for mobile */
-  }
-  nav ul {
-    flex-direction: column;
-    padding-left: 0;
-  }
+section[data-aos].aos-animate {
+  opacity: 1;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
-}
 #about {
   text-align: center;
-  padding: 0 12rem; /* Regular padding for larger screens */
+  padding: 0 12rem; /* Default padding for large screens */
 }
 
 #about h2 {
@@ -48,20 +31,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   margin: 0 1rem;
-}
-
-@media only screen and (max-width: 600px) {
-  #about {
-    padding: 0 1rem; /* Reduced padding for iPhone */
-  }
-
-  #about h2 {
-    font-size: 2rem; /* Adjusted font size for mobile */
-  }
-
-  #about p {
-    font-size: 1rem; /* Smaller text for mobile */
-  }
 }
 
 .container {
@@ -108,7 +77,7 @@ nav ul li a {
 
 /* General settings for all sections */
 section {
-  padding: 2rem 3rem 2rem 9rem; /* Default padding for large screens */
+  padding: 2rem 3rem; /* Default padding for large screens */
 }
 
 section h2 {
@@ -130,6 +99,18 @@ section ul {
 
 /* Mobile (iPhone) adjustments */
 @media only screen and (max-width: 600px) {
+  #about {
+    padding: 0 1rem; /* Reduced padding for mobile */
+  }
+
+  #about h2 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+
+  #about p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+
   section {
     padding: 1rem; /* Reduces padding for mobile */
   }
@@ -140,10 +121,8 @@ section ul {
 
   section p, section ul {
     margin-left: 1rem; /* Reduces left margin for mobile */
-    margin-right: 1rem; /* Keeps right margin as it is */
   }
 }
-
 
 footer {
   text-align: center;
