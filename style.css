@@ -131,3 +131,20 @@ footer {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+/* Profile photo styling */
+.profile-photo {
+  width: 100%;
+  max-width: 150px; /* Keeps image fixed size on laptop */
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 40px;  /* Adds significant space around the image on larger screens */
+}
+
+/* For mobile (iPhone) responsiveness */
+@media only screen and (max-width: 600px) {
+  .profile-photo {
+    max-width: 120px;  /* Smaller size on mobile */
+    margin: 20px;  /* Adjusted margin for mobile devices */
+  }
+}
