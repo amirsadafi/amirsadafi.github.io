@@ -8,7 +8,6 @@
   opacity: 1;
 }
 
-
 #about {
   text-align: center;
   padding: 0 12rem; /* Default padding for large screens */
@@ -26,7 +25,7 @@
 }
 
 .container {
-  width: 90%; /* Keeps space on both sides */
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -69,7 +68,7 @@ nav ul li a {
 
 /* General settings for all sections */
 section {
-  padding: 2rem 3rem; /* Default padding for large screens */
+  padding: 2rem 12rem; /* Default padding for large screens */
 }
 
 section h2 {
@@ -92,7 +91,7 @@ section ul {
 /* Mobile (iPhone) adjustments */
 @media only screen and (max-width: 600px) {
   #about {
-    padding: 0 1rem; /* Reduced padding for mobile */
+    padding: 0 2rem; /* Adjusted padding for mobile */
   }
 
   #about h2 {
@@ -104,7 +103,7 @@ section ul {
   }
 
   section {
-    padding: 1rem; /* Reduces padding for mobile */
+    padding: 1rem 2rem; /* Adjusted padding for mobile */
   }
 
   section h2 {
@@ -124,14 +123,6 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-/* Profile photo styling */
 .profile-photo {
   width: 100%;
   max-width: 150px; /* Keeps image fixed size on laptop */
